@@ -1,0 +1,16 @@
+D:\GitHub Repositories\LHD-Projects\HelloWorld\bin\Debug\net5.0\HelloWorld.exe
+D:\GitHub Repositories\LHD-Projects\HelloWorld\bin\Debug\net5.0\HelloWorld.deps.json
+D:\GitHub Repositories\LHD-Projects\HelloWorld\bin\Debug\net5.0\HelloWorld.runtimeconfig.json
+D:\GitHub Repositories\LHD-Projects\HelloWorld\bin\Debug\net5.0\HelloWorld.runtimeconfig.dev.json
+D:\GitHub Repositories\LHD-Projects\HelloWorld\bin\Debug\net5.0\HelloWorld.dll
+D:\GitHub Repositories\LHD-Projects\HelloWorld\bin\Debug\net5.0\ref\HelloWorld.dll
+D:\GitHub Repositories\LHD-Projects\HelloWorld\bin\Debug\net5.0\HelloWorld.pdb
+D:\GitHub Repositories\LHD-Projects\HelloWorld\obj\Debug\net5.0\HelloWorld.csprojAssemblyReference.cache
+D:\GitHub Repositories\LHD-Projects\HelloWorld\obj\Debug\net5.0\HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub Repositories\LHD-Projects\HelloWorld\obj\Debug\net5.0\HelloWorld.AssemblyInfoInputs.cache
+D:\GitHub Repositories\LHD-Projects\HelloWorld\obj\Debug\net5.0\HelloWorld.AssemblyInfo.cs
+D:\GitHub Repositories\LHD-Projects\HelloWorld\obj\Debug\net5.0\HelloWorld.csproj.CoreCompileInputs.cache
+D:\GitHub Repositories\LHD-Projects\HelloWorld\obj\Debug\net5.0\HelloWorld.dll
+D:\GitHub Repositories\LHD-Projects\HelloWorld\obj\Debug\net5.0\ref\HelloWorld.dll
+D:\GitHub Repositories\LHD-Projects\HelloWorld\obj\Debug\net5.0\HelloWorld.pdb
+D:\GitHub Repositories\LHD-Projects\HelloWorld\obj\Debug\net5.0\HelloWorld.genruntimeconfig.cache
