@@ -31,12 +31,12 @@ def scoreboard(score_board):
  
 #checking winner
 
-def check_winner(player_pos, cur_player):
+def check_winner(player_pos, now_player):
     #winning combination.
     solution = [[1,2,3],[4,5,6],[7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]]
     #check if above solution has been met. 
     for x in solution:
-        if all(y in player_pos[cur_player] for y in x):
+        if all(y in player_pos[now_player] for y in x):
             return True #if any above combination is satisfied
     
     return False #if no any combination is satisfied
@@ -49,7 +49,7 @@ def draw(player_pos):
     return False
 
 #game
-def game(cur_player):
+def game(now_player):
     values = ['' for x in range(9)] #tic-tac-toe
     player_pos = {'X':[], '0':[]} #position of X and O
     
@@ -58,7 +58,7 @@ def game(cur_player):
         tic_tac_toe(values)
         #Exeption block for move input
         try:
-            print("Player ", cur_player,"turn. Choose Box? : ",end="")
+            print("Player ", now_player,"turn. Choose Box? : ",end="")
             move = int(input())
         except ValueError:
             print("Try Again, Invalid Input!!!!")
@@ -76,17 +76,17 @@ def game(cur_player):
         #updating the game after input
         
         #updating the box
-        values[move-1]=cur_player
+        values[move-1]=now_player
 
         #updating positions
-        player_pos[cur_player].append(move)
+        player_pos[now_player].append(move)
         
         #calling winner function
-        if check_winner(player_pos, cur_player):
+        if check_winner(player_pos, now_player):
             tic_tac_toe(values)
-            print("Player ", cur_player, "is the winner.")
+            print("Player ", now_player, "is the winner.")
             print("\n")
-            return cur_player
+            return now_player
         
         #calling draw function
         if draw(player_pos):
@@ -96,10 +96,10 @@ def game(cur_player):
             return 'D'
         
         #switching moves of players
-        if cur_player == 'X':
-            cur_player = '0'
+        if now_player == 'X':
+            now_player = '0'
         else:
-            cur_player = 'X'
+            now_player = 'X'
 
 
 if __name__ == "__main__":
@@ -110,7 +110,7 @@ if __name__ == "__main__":
     print("\n")         
     
     #storing the player who choose X and 0
-    cur_player = player1
+    now_player = player1
 
     #storing the choice of player
     player_choice = {'X': "", '0':""}
@@ -126,7 +126,7 @@ if __name__ == "__main__":
     #loop will run until player exit the game
     while True:
         #player choices.
-        print("Trun to choose for", cur_player)
+        print("Trun to choose for", now_player)
         print("Enter 1 for X")
         print("Enter 2 for 0")
         print("Enter 3 to exit")
@@ -139,15 +139,15 @@ if __name__ == "__main__":
         
         #conditions for player choices
         if choice == 1:
-            player_choice['X'] = cur_player
-            if cur_player == player1:
+            player_choice['X'] = now_player
+            if now_player == player1:
                 player_choice['0'] = player2
             else:
                 player_choice['0'] = player1
                 
         elif choice == 2:
-            player_choice['O'] = cur_player
-            if cur_player == player1:
+            player_choice['O'] = now_player
+            if now_player == player1:
                 player_choice['X'] = player2
             else:
                 player_choice['X'] = player1
@@ -169,8 +169,8 @@ if __name__ == "__main__":
         
         scoreboard(score_board)
         # Switch player who chooses X or O
-        if cur_player == player1:
-            cur_player = player2
+        if now_player == player1:
+            now_player = player2
         else:
-            cur_player = player1
+            now_player = player1
                
