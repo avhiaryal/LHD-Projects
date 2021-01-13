@@ -1,5 +1,4 @@
 #COVID-19 Data Visualization using matplotlib in Python
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
