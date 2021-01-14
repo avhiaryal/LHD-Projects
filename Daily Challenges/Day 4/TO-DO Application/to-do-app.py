@@ -69,7 +69,7 @@ def add_entry(index, entries):
     """Add a new task"""
 
     new_task = input('\nTo do: ')
-    if input('Protect [yN]? ').lower().strip() == 'y':
+    if input('Protect [y / n]? ').lower().strip() == 'y':
         protect = True
     else:
         protect = False
@@ -95,7 +95,7 @@ def modify_entry(index, entries):
 
 def cleanup_entries(index, entries):
     """Cleanup: delete completed, non-protected entries older than a week"""
-    if (input('Have you checked that you protected the important stuff? [yN]').lower().strip() == 'y'):
+    if (input('Have you checked that you protected the important stuff? [y / n]').lower().strip() == 'y'):
         now = datetime.datetime.now()
         for entry in entries:
             if (now - entry.timestamp > datetime.timedelta(7, 0, 0) and entry.done and not entry.protected):
@@ -111,7 +111,7 @@ def modify_task(entry):
 
 def delete_entry(entry):
     """Erase entry"""
-    if (input('Are you sure [yN]? ').lower().strip() == 'y'):
+    if (input('Are you sure [y / n]? ').lower().strip() == 'y'):
         entry.delete_instance()
 
 
